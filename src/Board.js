@@ -62,6 +62,7 @@ static defaultProps = {
   /** handle changing a cell: update board & determine if winner */
 
   flipCellsAround(coord) {
+    console.log("flipping cells around",coord)
     let {ncols, nrows} = this.props;
     let board = this.state.board;
     let [y, x] = coord.split("-").map(Number);
@@ -72,6 +73,15 @@ static defaultProps = {
         board[y][x] = !board[y][x];
       }
     }
+
+    //Flip initial cell positions
+    flipCell(y,x);//flip initial cell 
+    flipCell(y,x-1); //flip left cell
+    flipCell(y,x+1); //flip right cell
+    flipCell(y-1,x); //flip bottom: ;
+    flipCell(y+1,x);//flip top: 
+    let hasWon=false;
+    this.setState({board: board,hasWon:hasWon});
 
     // TODO: flip this cell and the cells around it
 
@@ -86,7 +96,7 @@ static defaultProps = {
       let row=[];
       for(let x=0;x<this.props.ncols;x++){
         let coord=`${y}-${x}`
-        row.push(<Cell key={coord} isLit={this.state.board[y][x]}/>)
+        row.push(<Cell key={coord} isLit={this.state.board[y][x]} flipCellsAroundMe={()=>this.flipCellsAround(coord)}/>)
       }
       tblBoard.push(<tr key={y}>{row}</tr>)
     }
