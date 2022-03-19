@@ -62,7 +62,7 @@ static defaultProps = {
   /** handle changing a cell: update board & determine if winner */
 
   flipCellsAround(coord) {
-    console.log("flipping cells around",coord)
+    // console.log("flipping cells around",coord)
     let {ncols, nrows} = this.props;
     let board = this.state.board;
     let [y, x] = coord.split("-").map(Number);
@@ -80,7 +80,7 @@ static defaultProps = {
     flipCell(y,x+1); //flip right cell
     flipCell(y-1,x); //flip bottom: ;
     flipCell(y+1,x);//flip top: 
-    let hasWon=false;
+    let hasWon=board.every(row=>row.every(cell=> !cell));
     this.setState({board: board,hasWon:hasWon});
 
     // TODO: flip this cell and the cells around it
@@ -91,6 +91,15 @@ static defaultProps = {
   }
   /** Render game board or winning message. */
   render() {
+    if(this.state.hasWon) {
+      return <div className="Board-title">
+      <div className="winner">
+      <span className="neon-orange">YOU</span>
+      <span className="neon-blue">WON!</span> 
+      </div>
+      </div>
+  
+    }
     let tblBoard=[];
     for(let y=0;y<this.props.nrows;y++){
       let row=[];
@@ -100,14 +109,19 @@ static defaultProps = {
       }
       tblBoard.push(<tr key={y}>{row}</tr>)
     }
-    return <>
+    return <div>
+    <div className="Board-title">
+    <div className="neon-orange">Lights</div>
+    <div className="neon-blue">Out</div>
+    </div>
+
       <table className="Board">
       <tbody>
         {tblBoard}
       </tbody>
 
       </table>
-    </>
+    </div>
   }
 }
 

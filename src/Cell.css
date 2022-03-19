@@ -1,9 +1,16 @@
 .Cell {
-  height: 100px;
-  width: 100px;
-  background-color: darkgray;
+  height: 6rem;
+  width: 6rem;
+  background-color: #263238;
+  transition: background-color 0.7s ease;
 }
+@media only screen and (max-width: 600px) {
+  .Cell{
+    height: 3rem;
+    width: 3rem;
+  }
+} 
 
 .Cell-lit {
-  background-color: white;
+  background-color: #00bcd4;
 }
