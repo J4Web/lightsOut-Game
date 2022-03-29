@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Cell from "./Cell";
 import './Board.css';
+import Header from "./Header";
 
 /** Game board of Lights out.
  *
@@ -111,6 +112,7 @@ static defaultProps = {
     }
     return <div>
     <div className="Board-title">
+    <Header/>
     <div className="neon-orange">Lights</div>
     <div className="neon-blue">Out</div>
     </div>
