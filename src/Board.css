@@ -37,7 +37,7 @@ font-size:80px;
 }
 
 .winner .neon-blue,.winner .neon-orange{
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 @keyframes neon-orange {
@@ -76,16 +76,17 @@ font-size:80px;
 @media only screen and (max-width: 600px) {
   .Board-title{
     display: block;
+    
   }
   .neon-blue{
-    font-size: 65px;
+    font-size: 80px;
   }
-  .play{
+  /* .play{
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 40px;
-  }
+  } */
   .winner .neon-blue, .winner .neon-orange{
     /* margin-left: 100px; */
     display: flex;
@@ -95,15 +96,35 @@ font-size:80px;
     font-size:5000px;
 
   }
-
+/* @media only screen and (max-width: 912px)  {
+    .neon-orange{
+    font-size: 89px;
+  }
+  .neon-blue{
+    font-size: 43px;
+  }
+}  */
 
 }
-@media only screen and (max-width: 400px)  {
+@media only screen and (max-width: 389px)  {
     .neon-orange{
     font-size: 50px;
   }
   .neon-blue{
     font-size: 43px;
+  }
+} 
+@media only screen and (max-width: 294px)  {
+  .Board-title{
+    margin-top: 18px;
+  }
+} 
+@media only screen and (max-width: 440px)  {
+  .neon-orange{
+    font-size:40px;
+  }
+  .neon-blue{
+    font-size :38px;
   }
 } 
 

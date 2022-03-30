@@ -121,7 +121,6 @@ static defaultProps = {
       <tbody>
         {tblBoard}
       </tbody>
-
       </table>
     </div>
   }
