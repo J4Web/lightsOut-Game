@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
          <p>All rights reserved &#169; {date.getFullYear()}</p>
-         <p className="links"><a rel="noopener noreferrer" target="_blank" href="https://github.com/J4Web"><i class="fa-brands fa-github"></i></a> &nbsp;  &nbsp; <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/j4web007" ><i class="fa-brands fa-twitter"></i></a></p>
+         <p className="links"><a rel="noopener noreferrer" target="_blank" href="https://github.com/J4Web"><i className="fa-brands fa-github"></i></a> &nbsp;  &nbsp; <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/j4web007" ><i className="fa-brands fa-twitter"></i></a></p>
   
   </footer>
         );

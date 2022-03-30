@@ -97,6 +97,14 @@ font-size:80px;
   }
 
 
+}
+@media only screen and (max-width: 400px)  {
+    .neon-orange{
+    font-size: 50px;
+  }
+  .neon-blue{
+    font-size: 43px;
+  }
 } 
 
 /* https://www.mariokandut.com/how-to-use-media-queries-in-styled-components/ */
