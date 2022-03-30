@@ -21,27 +21,29 @@ p: 4,
 const custom={
     fontSize:29,
     position: 'absolute',
-    top:0,
-    right:100,
-    marginLeft: 8,
+    top: 0,
+    right:0,
+    // marginLeft: 40,
+    marginRight: 12.5,
     fontFamily: 'neon',
-
 }
 const close={
     position: 'absolute',
     top: '0',
     left:'0',
     color: '#fff',
-    marginRight:'100'
+    marginRight:'100',
+
 }
+
 export default function BasicModal() {
 const [open, setOpen] = React.useState(false);
 const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
 
 return (
-    <div>
-    <Button onClick={handleOpen} sx={custom} className="neon-orange"  >HOW TO PLAY 
+    <div >
+    <Button onClick={handleOpen} sx={custom} className="neon-orange play"  > Instructions
 
 </Button>
     <Modal

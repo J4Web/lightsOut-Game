@@ -16,6 +16,7 @@
 
 
 .neon-orange {
+  display: flex;
   font-family: neon;
   color: #FB4264;
   font-size: 80px;
@@ -53,15 +54,13 @@ font-size:80px;
 }
 .play
 {
-  /* display: flex;
+  display: flex;
   font-size: 1000px;
-  color: #fff; */
-  /* font-size: 56px; */
-  display: block;
-  font-size: 60px;
+  color: #fff;
+  /* font-size: 56px;
+  /* display: flex; */
 
 }
-
 @keyframes neon-blue{
   0%,
   100% {
@@ -78,15 +77,22 @@ font-size:80px;
     display: block;
     
   }
+  .neon-orange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  top:0;
+  }
   .neon-blue{
     font-size: 80px;
   }
-  /* .play{
+  .play{
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 40px;
-  } */
+  }
   .winner .neon-blue, .winner .neon-orange{
     /* margin-left: 100px; */
     display: flex;
@@ -105,6 +111,7 @@ font-size:80px;
   }
 }  */
 
+
 }
 @media only screen and (max-width: 389px)  {
     .neon-orange{
@@ -116,16 +123,16 @@ font-size:80px;
 } 
 @media only screen and (max-width: 294px)  {
   .Board-title{
-    margin-top: 18px;
+    margin-top: 5px;
   }
 } 
-@media only screen and (max-width: 440px)  {
+/* @media only screen and (max-width: 440px)  {
   .neon-orange{
     font-size:40px;
   }
   .neon-blue{
     font-size :38px;
   }
-} 
+}  */
 
 /* https://www.mariokandut.com/how-to-use-media-queries-in-styled-components/ */
