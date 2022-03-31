@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-// import './Modal.css';
+import './App.css';
+
 import './Board.css';
 const style = {
 position: 'absolute',
@@ -23,7 +24,9 @@ const custom={
     position: 'absolute',
     top: 0,
     right:0,
+    left:100,
     // marginLeft: 40,
+    // width: '70%',
     marginRight: 12.5,
     fontFamily: 'neon',
 }
@@ -42,8 +45,8 @@ const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
 
 return (
-    <div >
-    <Button onClick={handleOpen} sx={custom} className="neon-orange play"  > Instructions
+    <div>
+    <Button onClick={handleOpen} sx={custom} className="neon-orange play"  > How to play
 
 </Button>
     <Modal

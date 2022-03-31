@@ -13,6 +13,9 @@
   align-items: center;
   justify-content:center;
 }
+.container {
+  margin-top: 20px;
+}
 
 
 .neon-orange {
@@ -57,8 +60,6 @@ font-size:80px;
   display: flex;
   font-size: 1000px;
   color: #fff;
-  /* font-size: 56px;
-  /* display: flex; */
 
 }
 @keyframes neon-blue{
@@ -86,6 +87,10 @@ font-size:80px;
   }
   .neon-blue{
     font-size: 80px;
+  }
+   .neon-orange > .play
+   {
+    font: size 190px !important;
   }
   .play{
     display: flex;
@@ -117,6 +122,7 @@ font-size:80px;
     .neon-orange{
     font-size: 50px;
   }
+ 
   .neon-blue{
     font-size: 43px;
   }

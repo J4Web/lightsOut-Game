@@ -110,7 +110,7 @@ static defaultProps = {
       }
       tblBoard.push(<tr key={y}>{row}</tr>)
     }
-    return <div>
+    return <div className="container">
     <div className="Board-title">
 
     <div className="neon-orange">Lights</div>
