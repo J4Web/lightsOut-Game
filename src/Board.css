@@ -14,8 +14,10 @@
   justify-content:center;
 }
 .container {
-  margin-top: 20px;
+  margin-top: 15px;
+
 }
+
 
 
 .neon-orange {
@@ -55,13 +57,6 @@ font-size:80px;
     color: #806914;
   }
 }
-.play
-{
-  display: flex;
-  font-size: 1000px;
-  color: #fff;
-
-}
 @keyframes neon-blue{
   0%,
   100% {
@@ -73,7 +68,8 @@ font-size:80px;
     color: #146C80;
   }
 }
-@media only screen and (max-width: 600px)
+
+@media only screen and (max-width: 600px) 
 {
   .Board-title{
     display: block;
@@ -85,48 +81,37 @@ font-size:80px;
     align-items: center;
     text-align: center;
   top:0;
+  font-size: 63px;
   }
   .neon-blue{
-    font-size: 80px;
-  }
-   .neon-orange > .play
-   {
-    font: size 190px !important;
+    font-size: 50px;
   }
   .winner .neon-blue, .winner .neon-orange{
-    /* margin-left: 100px; */
     display: flex;
     text-align: center;
     justify-content: center;
     align-items:center;
-    /* font-size:5000px; */
+  
 
   }
-/* @media only screen and (max-width: 912px)  {
-    .neon-orange{
-    font-size: 89px;
-  }
-  .neon-blue{
-    font-size: 43px;
-  }
-}  */
-
 
 }
-@media only screen and (max-width: 389px)  {
+/* @media only screen and (max-width: 389px)  {
     .neon-orange{
-    font-size: 50px;
+    font-size: 40px;
   }
+
  
   .neon-blue{
-    font-size: 43px;
+    font-size: 38px;
   }
 } 
 @media only screen and (max-width: 294px)  {
   .Board-title{
     margin-top: 5px;
   }
-} 
+} */
+/* }  */
 /* @media only screen and (max-width: 440px)  {
   .neon-orange{
     font-size:40px;
@@ -137,3 +122,4 @@ font-size:80px;
 }  */
 
 /* https://www.mariokandut.com/how-to-use-media-queries-in-styled-components/ */
+

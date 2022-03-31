@@ -15,3 +15,18 @@
 .Cell-lit {
   background-color: #00bcd4;
 }
+
+@media only screen and (max-width: 600px) and ( min-width:450px) 
+{
+  .Cell{
+     height: 4.5rem;
+    width: 4.5rem;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width:700)
+{
+  .Cell{
+     height: 3.3rem;
+    width: 3.3rem;
+  }
+}
