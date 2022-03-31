@@ -73,7 +73,8 @@ font-size:80px;
     color: #146C80;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)
+{
   .Board-title{
     display: block;
     
@@ -92,19 +93,13 @@ font-size:80px;
    {
     font: size 190px !important;
   }
-  .play{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 40px;
-  }
   .winner .neon-blue, .winner .neon-orange{
     /* margin-left: 100px; */
     display: flex;
     text-align: center;
     justify-content: center;
     align-items:center;
-    font-size:5000px;
+    /* font-size:5000px; */
 
   }
 /* @media only screen and (max-width: 912px)  {

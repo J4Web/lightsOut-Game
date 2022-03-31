@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Cell from "./Cell";
 import './Board.css';
-import Header from "./Header";
 
 /** Game board of Lights out.
  *
